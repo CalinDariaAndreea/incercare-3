@@ -1,69 +1,83 @@
 .profile {
-  overflow: hidden;
-
-  width: 300px;
-  margin: 30px auto;
-
-  text-align: center;
-
+  width: 1000px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15px;
+  width: 370px;
+  box-shadow: 0 0 10px #c6cccced;
   border-radius: 10px;
-  background-color: #fff;
-  box-shadow: 2px 4px 8px 0 rgba(34, 60, 80, 0.2),
-    -2px 4px 8px 0 rgba(34, 60, 80, 0.2);
-}
-
-.avatar {
-  width: 125px;
-  height: 125px;
-  margin-bottom: 30px;
-
-  border: 1px solid darkgrey;
-  border-radius: 50%;
-  background-color: aliceblue;
 }
 
 .description {
-  padding: 40px 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: inherit;
+  border-bottom: #7e6f7498 solid 2px;
+}
+
+.avatar {
+  width: 300px;
+  box-shadow: 0 0 3px 0px #0000004d;
+  border-radius: 50%;
+  background-color: #e7eeeeed;
+  padding: 20px 10px 0px 10px;
+  margin-bottom: 15px;
 }
 
 .name {
+  font-weight: 700;
+  font-size: 30px;
   margin-bottom: 15px;
+  color: #524a4d;
+}
 
+.tag {
   font-weight: 500;
+  font-size: 20px;
+  color: #524a4d;
+  margin-bottom: 15px;
 }
 
-.tag,
 .location {
-  margin-bottom: 10px;
-
-  color: darkgray;
+  font-weight: 700;
+  font-size: 20px;
+  color: #524a4d;
+  margin-bottom: 15px;
 }
-
 .stats {
   display: flex;
-
-  border-top: 1px solid darkgray;
-  background-color: ghostwhite;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: auto;
+  padding: 0;
+  width: inherit;
+  background-color: #7e6f7449;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .stats > li {
   display: flex;
-  flex-basis: calc(100% / 3);
   flex-direction: column;
-
-  padding: 20px;
-}
-
-.stats > li:not(:last-child) {
-  border-right: 1px solid darkgray;
+  align-items: center;
+  margin: 5px;
+  min-width: 80px;
+  padding: 7px 0;
 }
 
 .label {
-  color: darkgray;
-
-  font-size: 13px;
+  margin-right: 3px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #524a4d8b;
+  margin-bottom: 5px;
 }
 
 .quantity {
-  font-weight: 500;
+  font-weight: 800;
+  font-size: 20px;
+  color: #524a4d;
 }
